@@ -2026,9 +2026,7 @@
         <button class="btn btn--gold" data-location="portland">
           <i class="fa-solid fa-location-dot"></i> NW Portland
         </button>
-        <button class="btn btn--gold" data-location="washougal">
-          <i class="fa-solid fa-location-dot"></i> Washougal
-        </button>
+      
       </div>
     </div>
   </div>
@@ -2042,9 +2040,7 @@
           <button class="btn btn--gold" data-location="portland">
             <i class="fa-solid fa-location-dot"></i> NW Portland
           </button>
-          <button class="btn btn--gold" data-location="washougal">
-            <i class="fa-solid fa-location-dot"></i> Washougal
-          </button>
+       
         </div>
       </div>
       <div id="reservation-iframe-container" style="display: none; flex-direction: column;">
@@ -2067,9 +2063,7 @@
         <button class="btn btn--gold" data-location="portland">
           <i class="fa-solid fa-location-dot"></i> NW Portland
         </button>
-        <button class="btn btn--gold" data-location="washougal">
-          <i class="fa-solid fa-location-dot"></i> Washougal
-        </button>
+     
       </div>
     </div>
   </div>
@@ -2328,7 +2322,7 @@
 
       const openReservationForLocation = (location) => {
         if (!location || !reservationLinks[location]) return;
-        resTitle.textContent = `Reserve at ${location === 'portland' ? 'NW Portland' : 'Washougal'}`;
+        resTitle.textContent = 'Reserve at NW Portland';
         resIframe.src = reservationLinks[location];
         resLocationSelector.style.display = 'none';
         resIframeContainer.style.display = 'flex';
@@ -2417,4 +2411,5 @@
 
 </html>
 ```
+
 
